@@ -40,6 +40,11 @@ run install.m
 ## VOT 
 2、[VOT Intergration] ./vot2017_trax
 
+Update parameters in CFWCR_VOT.m to point to your GPU (in init_param(region) subroutine)
+
+```
+cnn_params.gpu_id = [1]
+```
 
 ## Citing DCFNet
 

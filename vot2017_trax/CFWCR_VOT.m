@@ -799,8 +799,8 @@ function params = init_param(region)
 	cnn_params.input_size_mode = 'adaptive';        % How to choose the sample size
 	cnn_params.input_size_scale = 1;                % Extra scale factor of the input samples to the network (1 is no scaling)
 	cnn_params.use_gpu = true;
-	cnn_params.gpu_id = [3];
-
+	cnn_params.gpu_id = [1];						% Set GPU as returned by gpuDevice.m (Default as 1)
+	
 	% Which features to include
 	params.t_features = {
 	    struct('getFeature',@get_cnn_layers, 'fparams',cnn_params),...
